@@ -27,23 +27,34 @@ myFunction();
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
-function counter() {
-    let count = 0;
-    return function() {
-      count = count+1;
-      return count;
-    }
-};
+// function counter() {
+//     let count = 0;
+//     return function() {
+//       count = count+1;
+//       return count;
+//     }
+// };
 
-const newCounter = counter();
+// const newCounter = counter();
+
+// function summation(attribute) {
+//   console.log(newCounter());
+// for (i = 0; i < attribute; i++){
+//   newCounter()+newCounter();
+// }
+//  return newCounter();
+// }
 
 function summation(attribute) {
-  console.log(newCounter());
-for (i = 0; i < attribute; i++){
-  newCounter()+newCounter();
-}
- return newCounter();
-}
+  let count = 0;
+  for (i = 0; i < attribute; i++) {
+    
+    count = (count + 1) + i;
+    
 
+    }
+      return count;
+    }
+   
 
 console.log(summation(4));
